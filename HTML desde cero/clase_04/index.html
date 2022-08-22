@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Arquitectura cliente servidor
+            Arquitectura: la forma en que están estructurados los componentes de un sistema.
+            Cliente: el dispositivo que solicita la página web.
+            Servidor: es el hardware y software que almacena y entrega la página web y sus componentes. 
+        
+     -->
+     <!-- Enlaces
+            Se crean con la etiqueta a (anchor) y necesitan el atributo obligatorio href  -->
+    
+    <p>
+        <a href="https://ed.team">Ir a EDteam</a>
+    </p>
+
+    <!-- Atributos opcionales 
+            target ="_blank" pestaña nueva
+            rel="nofollow" (no transmite SEO)
+            rel="noreference" (no indica al destino el origen del link)
+            rel="noopener" (evita la incrustación de código malicioso al abrir enlaces en nuevas pestañas)          
+            download (descarga el recurso en lugar de abrirlo por el navegador)
+    -->
+    <p>
+        <a href="https://ed.team" target="_blank">Ir a EDteam en pestaña nueva</a>
+    </p>
+
+    <p>
+        <a href="/clase_04/img/goku.jpg">Imagen de Goku</a>
+        <br>
+        <a href="/clase_04/img/goku.jpg" download>Descargar imagen de Goku</a>
+    </p>
+
+    <!-- Rutas relativas y absolutas
+        1. Rutas aboslutas
+        Tienen protoclo (http o https) y son únicas
+        *Se usan para rutas externas
+        
+        2. Rutas relativas
+        *Se usan para rutas internas del proyecto
+        *No usan protocolo
+        *Se debe navegar hacia el destino de la siguiente manera:
+            *Si el recurso está en la misma carpeta se escribe su nombre y extensión.
+                goku.jpg
+            *Si el recurso está en una carpeta por encima
+                ../goku.jpg
+            *Si el recurso está en una carpeta por debajo
+                img/goku.jpg
+        
+        3. Rutas relativas a la raíz
+        *Se construyen a partir de la carpeta raíz del proyecto
+        *Empiezan siempre con /
+    -->
+
+    <p>
+        <a href="/clase_04/img/goku.jpg">Goku</a>
+    </p>
+    
+    <p><a href="/clase_04/html/imagenes.html">Ir a imagenes</a></p>
+
+    <p><a href="/clase_04/html/marcadores.html">Ir a marcadores</a></p>
+
+    <p><a href="/clase_04/html/listas.html">Ir a las listas</a></p>
+</body>
+</html>
