@@ -1,0 +1,152 @@
+/* Selectores
+
+selector{
+    propiedad1: valor1;
+    propiedad2: valor2;
+}
+
+1. Selectores simples (una palabra)
+    h1{}
+2. Selectores compuestos (más de una palabra)
+    h1 span{}
+3. Selectores con operadores
+    h1 + span{}
+4. Pseudoclases
+
+*/
+
+/* Selectores simples: etiqueta, tipo o elemento
+        Son etiquetas HTML
+*/
+h1{
+    /* color: green; */
+}
+
+p{
+    /* color: blue; */
+}
+
+/* Selectores simple: clases
+    .clases
+    
+    *No pueden comenzar con número
+    *Pueden comenzar con - o _
+    *Pueden tener :
+    *Pueden ser una letra
+*/
+.title{
+    /* color: red; */
+}
+.description{
+    /* color: green; */
+}
+
+.purple{
+    /* color: purple; */
+}
+.green{
+    /* color: green; */
+}
+.red{
+    /* color: red; */
+}
+
+.button{
+    /* display: inline-block;
+    padding: .75em 2em;
+    background: steelblue;
+    color: white;
+    border-radius: .25em; */
+}
+
+/* Selectores de id (simple) */
+
+#title{
+    /* background: yellow; */
+}
+
+/* Selectores compuestos: agrupados */
+
+h1, .button, p{
+    /* color:red; */
+}
+
+/* Selectores compuestos: combinados */
+
+h1.title{
+    /* color: green; */
+}
+/* Selectores compuestos: descendientes */
+
+body span{
+    /* color: blue; */
+}
+/* Operadores * > + ~ */
+
+*{
+    /* margin: 0;
+    font-size: 1em;
+    color: orange;
+    background: orange; */
+}
+
+p > span{
+    /* color: green;
+    background: yellow; */
+}
+
+p + div{
+    /* border: 1px solid; */
+}
+
+p ~ div{
+    /* background: pink; */
+}
+
+/* Selectores de atributo
+    usan []
+    [attr="value"]
+    [attr]
+*/
+[type="text"]{
+    /* border: 1px solid green; */
+}
+
+[type="number"]{
+    /* border: 1px solid red; */
+}
+
+[required]{
+    /* border: 1px solid red; */
+}
+
+[type="submit"]{
+    /* background: steelblue;
+    color: white;
+    border: none;
+    border-radius: .2em; */
+}
+
+/* Comienza con [attr^="value"] */
+
+[type^="sub"]{
+    background: green;
+}
+
+a[href^="http://"]{
+    color: red;
+    border-bottom: 1px dashed red;
+}
+
+/* Termina con [attr$="value"]*/
+
+a[href$="mp4"]{
+    background: red;
+}
+
+/* Contiene [attr*="value"] */
+
+a[href*="team"]{
+    background: blue;
+    color: white;
+}
