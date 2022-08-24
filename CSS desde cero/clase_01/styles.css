@@ -1,0 +1,14 @@
+/* Variables CSS (custom properties) */
+
+:root{
+    --color:green;
+}
+h1{
+    /* color: red; */
+    color: var(--color);
+}
+
+p{
+    color: var(--color);
+}
+
